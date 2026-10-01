@@ -14,7 +14,7 @@
 <p align="center">
   <a href="https://pollora.dev"><strong>pollora.dev</strong></a> ·
   <a href="https://pollora.dev/getting-started/installation/"><strong>Documentation</strong></a> ·
-  <a href="https://pollora.dev/compare/"><strong>Pollora vs Acorn, Sage, Corcel</strong></a> ·
+  <a href="https://pollora.dev/compare/"><strong>How Pollora compares</strong></a> ·
   <a href="https://www.youtube.com/watch?v=Wk1VzPapqM8"><strong>1-minute tour</strong></a>
 </p>
 
