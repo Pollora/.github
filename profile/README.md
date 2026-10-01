@@ -36,3 +36,5 @@ Requires PHP 8.4+ for a new project, Laravel 13.34 and WordPress 7.1+. Current r
 | [theme-default](https://github.com/Pollora/theme-default) · [theme-apiary](https://github.com/Pollora/theme-apiary) · [theme-buzz](https://github.com/Pollora/theme-buzz) | Themes (Blade, Vite, Tailwind CSS) |
 
 Questions and ideas: [GitHub Discussions](https://github.com/Pollora/pollora/discussions). Bugs: [issues on Pollora/framework](https://github.com/Pollora/framework/issues). Maintained by [AmphiBee](https://amphibee.fr).
+
+Pollora builds on the work of [Roots](https://roots.io) (Bedrock, Sage, Acorn, `@roots/vite-plugin`), a constant source of inspiration, and on [Corcel](https://github.com/corcel/corcel), which its WordPress models fork.
