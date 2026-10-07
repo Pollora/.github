@@ -1,0 +1,214 @@
+{
+  "families": {
+    "core": {
+      "label": "Core",
+      "mascot": "mascot-developer.svg"
+    },
+    "package": {
+      "label": "Package",
+      "mascot": "mascot-documentation.svg"
+    },
+    "ai": {
+      "label": "AI",
+      "mascot": "mascot-peek.svg"
+    },
+    "plugin": {
+      "label": "WordPress plugin",
+      "mascot": "mascot-peek.svg"
+    },
+    "theme": {
+      "label": "Theme"
+    },
+    "content": {
+      "label": "Docs",
+      "mascot": "mascot-documentation.svg"
+    },
+    "org": {
+      "label": "Open source · MIT",
+      "mascot": "mascot-developer.svg"
+    }
+  },
+  "repos": [
+    {
+      "repo": "framework",
+      "family": "core",
+      "name": "Pollora",
+      "accent": "Framework",
+      "tagline": "The Laravel framework for WordPress.",
+      "command": "composer require pollora/framework"
+    },
+    {
+      "repo": "pollora",
+      "family": "core",
+      "name": "Pollora",
+      "accent": "Skeleton",
+      "tagline": "Start a WordPress project that runs inside Laravel.",
+      "command": "composer create-project pollora/pollora"
+    },
+    {
+      "repo": "cli",
+      "family": "core",
+      "name": "Pollora",
+      "accent": "CLI",
+      "tagline": "A new Laravel + WordPress project in one command.",
+      "command": "pollora new my-site --ddev"
+    },
+    {
+      "repo": "colt",
+      "family": "package",
+      "name": "Colt",
+      "tagline": "Eloquent models for your WordPress data.",
+      "command": "composer require pollora/colt"
+    },
+    {
+      "repo": "WordPressEntity",
+      "family": "package",
+      "name": "Entity",
+      "tagline": "Post types and taxonomies, in a fluent API.",
+      "command": "composer require pollora/entity"
+    },
+    {
+      "repo": "Query",
+      "family": "package",
+      "name": "Query",
+      "tagline": "WP_Query, the fluent way.",
+      "command": "composer require pollora/query"
+    },
+    {
+      "repo": "WordPressArguments",
+      "family": "package",
+      "name": "WordPress",
+      "accent": "Arguments",
+      "tagline": "WordPress arguments as typed objects.",
+      "command": "composer require pollora/wordpress-args"
+    },
+    {
+      "repo": "hook",
+      "family": "package",
+      "name": "Hook",
+      "tagline": "WordPress actions and filters, with callbacks that resolve.",
+      "command": "composer require pollora/hook"
+    },
+    {
+      "repo": "option",
+      "family": "package",
+      "name": "Option",
+      "tagline": "WordPress options with validation and value objects.",
+      "command": "composer require pollora/option"
+    },
+    {
+      "repo": "ajax",
+      "family": "package",
+      "name": "Ajax",
+      "tagline": "WordPress AJAX actions with a fluent API.",
+      "command": "composer require pollora/ajax"
+    },
+    {
+      "repo": "Helper-Overrider",
+      "family": "package",
+      "name": "Helper",
+      "accent": "Overrider",
+      "tagline": "One __() for Laravel and WordPress translations.",
+      "command": "composer require pollora/helper-overrider"
+    },
+    {
+      "repo": "nectar",
+      "family": "ai",
+      "name": "Nectar",
+      "tagline": "Guidelines, skills and MCP tools that teach coding agents Pollora.",
+      "command": "composer require pollora/nectar --dev"
+    },
+    {
+      "repo": "abilities",
+      "family": "ai",
+      "name": "Abilities",
+      "tagline": "The WordPress Abilities API, the Laravel way.",
+      "command": "composer require pollora/abilities"
+    },
+    {
+      "repo": "McpConnector",
+      "family": "ai",
+      "name": "MCP",
+      "accent": "Connector",
+      "tagline": "Your WordPress content as MCP tools, with OAuth 2.1 built in.",
+      "command": "composer require pollora/mcp-connector"
+    },
+    {
+      "repo": "AiVisibility",
+      "family": "ai",
+      "name": "AI",
+      "accent": "Visibility",
+      "tagline": "llms.txt, Markdown endpoints and AI directives for WordPress.",
+      "command": "composer require pollora/ai-visibility"
+    },
+    {
+      "repo": "portcullis",
+      "family": "plugin",
+      "name": "Portcullis",
+      "tagline": "A secret login URL and brute-force lockouts for WordPress.",
+      "command": "composer require pollora/portcullis"
+    },
+    {
+      "repo": "MeiliFacets",
+      "family": "plugin",
+      "name": "Meili",
+      "accent": "Facets",
+      "tagline": "Filters, facets and suggestions in milliseconds, with Meilisearch.",
+      "command": "composer require pollora/meilifacets",
+      "join": true
+    },
+    {
+      "repo": "plugin-default",
+      "family": "plugin",
+      "name": "Plugin",
+      "accent": "starter",
+      "tagline": "The template behind every Pollora plugin.",
+      "command": "php artisan pollora:make:plugin acme"
+    },
+    {
+      "repo": "theme-default",
+      "family": "theme",
+      "name": "Starter",
+      "tagline": "Blade, Vite and Tailwind CSS v4: the default Pollora theme.",
+      "command": "php artisan pollora:make:theme my-theme",
+      "screenshot": "theme-default.png"
+    },
+    {
+      "repo": "theme-apiary",
+      "family": "theme",
+      "name": "Apiary",
+      "tagline": "A complete WooCommerce theme, in Blade and Tailwind CSS.",
+      "command": "php artisan pollora:make:theme shop",
+      "screenshot": "theme-apiary.png"
+    },
+    {
+      "repo": "theme-buzz",
+      "family": "theme",
+      "name": "Buzz",
+      "tagline": "A typographic magazine theme, edited in the Site Editor.",
+      "command": "php artisan pollora:make:theme journal",
+      "screenshot": "theme-buzz.png"
+    },
+    {
+      "repo": "documentation",
+      "family": "content",
+      "name": "Pollora",
+      "accent": "Docs",
+      "tagline": "The source of the documentation on pollora.dev."
+    },
+    {
+      "repo": "pollora.dev",
+      "family": "content",
+      "name": "pollora",
+      "accent": ".dev",
+      "tagline": "The Pollora website: guides, docs and press kit."
+    },
+    {
+      "repo": "profile",
+      "family": "org",
+      "name": "Pollora",
+      "tagline": "The Laravel framework for WordPress.",
+      "command": "composer global require pollora/cli"
+    }
+  ]
+}

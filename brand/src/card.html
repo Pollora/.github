@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  :root {
+    --ink: #1d142a;
+    --muted: #5b5068;
+    --paper: #fcf7f5;
+    --pink: #fb196d;
+    --orange: #ff8c12;
+    --teal: #49c7b9;
+    --gradient: linear-gradient(90deg, #fb196d 0%, #ff314c 33%, #ff5334 66%, #ff8c12 100%);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: var(--w); height: var(--h); }
+  body {
+    position: relative;
+    overflow: hidden;
+    background: var(--paper);
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--ink);
+  }
+  .bar { position: absolute; inset: 0 0 auto 0; height: 12px; background: var(--gradient); }
+  .glow {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle at 40% 40%, rgba(255, 140, 18, .30), rgba(251, 25, 109, .16) 45%, rgba(251, 25, 109, 0) 70%);
+  }
+  .dots {
+    position: absolute;
+    background-image: radial-gradient(rgba(29, 20, 42, .10) 2px, transparent 2.5px);
+    background-size: 26px 26px;
+  }
+  .text { position: absolute; display: flex; flex-direction: column; }
+  .top { display: flex; align-items: center; gap: 22px; }
+  .logo { display: block; }
+  .chip {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    color: var(--ink);
+    border: 2px solid var(--ink);
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  .name { display: inline-block; white-space: nowrap; font-weight: 700; line-height: .95; letter-spacing: -0.04em; }
+  .name .accent { background: var(--gradient); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .tagline { font-weight: 500; color: var(--muted); line-height: 1.22; letter-spacing: -0.01em; }
+  .command {
+    align-self: flex-start;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500;
+    background: var(--ink);
+    color: #f5eef0;
+    border-radius: 14px;
+    box-shadow: 0 10px 0 -4px rgba(251, 25, 109, .9);
+    white-space: nowrap;
+  }
+  .command .prompt { color: var(--orange); margin-right: .6em; }
+  .url { font-family: 'JetBrains Mono', monospace; font-weight: 500; color: #ff5334; }
+  .mascot { position: absolute; object-fit: contain; }
+  .shot {
+    position: absolute;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 3px solid var(--ink);
+    background: #fff;
+    box-shadow: 18px 18px 0 0 var(--ink);
+  }
+  .shot .chrome { height: 34px; background: var(--ink); display: flex; gap: 9px; align-items: center; padding-left: 16px; }
+  .shot .chrome i { width: 12px; height: 12px; border-radius: 50%; background: #fb196d; }
+  .shot .chrome i:nth-child(2) { background: #ff8c12; }
+  .shot .chrome i:nth-child(3) { background: var(--teal); }
+  .shot img { display: block; width: 100%; }
+
+  /* The peeking mascot rises from the bottom edge; plugins get it mirrored. */
+  .family-ai .mascot, .family-plugin .mascot { top: auto !important; bottom: -8px; }
+  .family-plugin .mascot { transform: scaleX(-1); }
+
+  /* Social preview, 1280 × 640 */
+  body.card { --w: 1280px; --h: 640px; }
+  .card .text { left: 84px; top: 74px; bottom: 70px; width: 720px; justify-content: space-between; }
+  .card .logo { height: 70px; }
+  .card .chip { font-size: 17px; padding: 8px 18px; }
+  .card .name { font-size: 112px; }
+  .card .tagline { font-size: 38px; margin-top: 22px; max-width: 680px; }
+  .card .command { font-size: 23px; padding: 17px 24px; }
+  .card .url { font-size: 22px; margin-top: 22px; }
+  .card .glow { width: 760px; height: 760px; right: -170px; top: -60px; }
+  .card .dots { width: 360px; height: 260px; right: 40px; bottom: 30px; }
+  .card .mascot { width: 470px; height: 470px; right: 50px; top: 110px; }
+  .card .shot { width: 520px; right: -90px; top: 120px; transform: rotate(-4deg); }
+
+  /* README banner, 1280 × 400 */
+  body.banner { --w: 1280px; --h: 400px; }
+  .banner .text { left: 72px; top: 0; bottom: 0; width: 820px; justify-content: center; }
+  .banner .logo { height: 52px; }
+  .banner .chip { font-size: 14px; padding: 6px 14px; }
+  .banner .name { font-size: 96px; margin-top: 30px; }
+  .banner .tagline { font-size: 32px; margin-top: 16px; max-width: 780px; }
+  .banner .command, .banner .url { display: none; }
+  .banner .glow { width: 620px; height: 620px; right: -110px; top: -150px; }
+  .banner .dots { width: 300px; height: 180px; right: 30px; bottom: 16px; }
+  .banner .mascot { width: 360px; height: 360px; right: 70px; top: 30px; }
+  .banner .shot { width: 440px; right: -60px; top: 70px; transform: rotate(-4deg); }
+</style>
+</head>
+<body class="{{format}}">
+  <div class="bar"></div>
+  <div class="glow"></div>
+  <div class="dots"></div>
+  {{visual}}
+  <div class="text">
+    <div class="top">
+      <img class="logo" src="{{logo}}" alt="">
+      <span class="chip">{{family}}</span>
+    </div>
+    <div>
+      <h1 class="name">{{name}}</h1>
+      <p class="tagline">{{tagline}}</p>
+    </div>
+    <div>
+      <div class="command"><span class="prompt">$</span>{{command}}</div>
+      <div class="url">{{url}}</div>
+    </div>
+  </div>
+<script>
+  // Keeps the name on one line, clear of the mascot or screenshot: shrinks it until it fits.
+  const name = document.querySelector('.name');
+  const banner = document.body.classList.contains('banner');
+  const shot = document.querySelector('.shot') !== null;
+  const room = banner ? (shot ? 800 : 758) : (shot ? 700 : 650);
+  let size = parseFloat(getComputedStyle(name).fontSize);
+  while (name.getBoundingClientRect().width > room && size > 56) {
+    name.style.fontSize = `${--size}px`;
+  }
+</script>
+</body>
+</html>
