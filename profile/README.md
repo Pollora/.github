@@ -52,6 +52,7 @@ The framework is built from these, and each one works on its own.
 |---|---|
 | [colt](https://github.com/Pollora/colt) | Eloquent models for WordPress data (a fork of Corcel) |
 | [Query](https://github.com/Pollora/Query) | `WP_Query`, the fluent way |
+| [metabox](https://github.com/Pollora/metabox) | Meta Box fields, blocks and settings pages in a fluent API |
 | [WordPressEntity](https://github.com/Pollora/WordPressEntity) | Post types and taxonomies in a fluent API |
 | [WordPressArguments](https://github.com/Pollora/WordPressArguments) | WordPress arguments as typed objects |
 | [hook](https://github.com/Pollora/hook) · [option](https://github.com/Pollora/option) · [ajax](https://github.com/Pollora/ajax) | Actions and filters, options, AJAX actions |
