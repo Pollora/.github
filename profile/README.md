@@ -33,7 +33,7 @@ class Seo
 }
 ```
 
-A new project needs PHP 8.4+ and WordPress 7.1+. Current release: [v13.35.0](https://github.com/Pollora/framework/releases/tag/v13.35.0), on Laravel 13.35. Everything is open source.
+A new project needs PHP 8.4+ and WordPress 7.1+. Current release: [v13.35.1](https://github.com/Pollora/framework/releases/tag/v13.35.1), on Laravel 13.35. Everything is open source.
 
 ### Core
 
