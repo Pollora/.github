@@ -82,6 +82,14 @@
       "command": "composer require pollora/metabox"
     },
     {
+      "repo": "metabox-bridge",
+      "family": "package",
+      "name": "Metabox",
+      "accent": "Bridge",
+      "tagline": "Meta Box custom tables, with migrations and Eloquent.",
+      "command": "composer require pollora/metabox-bridge"
+    },
+    {
       "repo": "WordPressArguments",
       "family": "package",
       "name": "WordPress",
