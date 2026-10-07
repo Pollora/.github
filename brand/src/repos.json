@@ -75,6 +75,13 @@
       "command": "composer require pollora/query"
     },
     {
+      "repo": "metabox",
+      "family": "package",
+      "name": "Metabox",
+      "tagline": "Meta Box fields and blocks, the fluent way.",
+      "command": "composer require pollora/metabox"
+    },
+    {
       "repo": "WordPressArguments",
       "family": "package",
       "name": "WordPress",
