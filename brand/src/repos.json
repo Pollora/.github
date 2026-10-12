@@ -105,6 +105,13 @@
       "command": "composer require pollora/discovery"
     },
     {
+      "repo": "attributes",
+      "family": "package",
+      "name": "Attributes",
+      "tagline": "Declare post types, hooks and routes as PHP attributes.",
+      "command": "composer require pollora/attributes"
+    },
+    {
       "repo": "hook",
       "family": "package",
       "name": "Hook",
