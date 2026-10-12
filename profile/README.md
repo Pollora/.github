@@ -56,6 +56,7 @@ The framework is built from these, and each one works on its own.
 | [WordPressEntity](https://github.com/Pollora/WordPressEntity) | Post types and taxonomies in a fluent API |
 | [WordPressArguments](https://github.com/Pollora/WordPressArguments) | WordPress arguments as typed objects |
 | [hook](https://github.com/Pollora/hook) · [option](https://github.com/Pollora/option) · [ajax](https://github.com/Pollora/ajax) | Actions and filters, options, AJAX actions |
+| [discovery](https://github.com/Pollora/discovery) | Finds the classes that carry attributes and hands them to the code that registers them, with or without Laravel |
 | [Helper-Overrider](https://github.com/Pollora/Helper-Overrider) | One `__()` for Laravel and WordPress translations |
 
 ### AI

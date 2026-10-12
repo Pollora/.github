@@ -98,6 +98,13 @@
       "command": "composer require pollora/wordpress-args"
     },
     {
+      "repo": "discovery",
+      "family": "package",
+      "name": "Discovery",
+      "tagline": "Find the classes that carry attributes, and hand them over.",
+      "command": "composer require pollora/discovery"
+    },
+    {
       "repo": "hook",
       "family": "package",
       "name": "Hook",
