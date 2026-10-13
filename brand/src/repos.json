@@ -112,6 +112,20 @@
       "command": "composer require pollora/attributes"
     },
     {
+      "repo": "wp-rest",
+      "family": "package",
+      "name": "WP REST",
+      "tagline": "REST API routes as controller classes and attributes.",
+      "command": "composer require pollora/wp-rest"
+    },
+    {
+      "repo": "wp-cli",
+      "family": "package",
+      "name": "WP-CLI",
+      "tagline": "WP-CLI commands as classes and attributes.",
+      "command": "composer require pollora/wp-cli"
+    },
+    {
       "repo": "hook",
       "family": "package",
       "name": "Hook",
