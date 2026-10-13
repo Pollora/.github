@@ -59,6 +59,7 @@ The framework is built from these, and each one works on its own.
 | [discovery](https://github.com/Pollora/discovery) | Finds the classes that carry attributes and hands them to the code that registers them, with or without Laravel |
 | [attributes](https://github.com/Pollora/attributes) | The PHP attributes that declare post types, taxonomies, hooks and REST routes, usable without the framework |
 | [wp-rest](https://github.com/Pollora/wp-rest) · [wp-cli](https://github.com/Pollora/wp-cli) | REST API routes and WP-CLI commands declared as classes with attributes, with or without Laravel |
+| [schedule](https://github.com/Pollora/schedule) | Scheduled tasks for WordPress, as `#[Schedule]` attributes or a fluent API, with WP-Cron as the default driver, with or without Laravel |
 | [Helper-Overrider](https://github.com/Pollora/Helper-Overrider) | One `__()` for Laravel and WordPress translations |
 
 ### AI

@@ -126,6 +126,13 @@
       "command": "composer require pollora/wp-cli"
     },
     {
+      "repo": "schedule",
+      "family": "package",
+      "name": "Schedule",
+      "tagline": "Scheduled tasks for WordPress: attributes, a fluent API, one engine.",
+      "command": "composer require pollora/schedule"
+    },
+    {
       "repo": "hook",
       "family": "package",
       "name": "Hook",
