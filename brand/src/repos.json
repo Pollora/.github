@@ -154,6 +154,13 @@
       "command": "composer require pollora/roles"
     },
     {
+      "repo": "block-bindings",
+      "family": "package",
+      "name": "Block Bindings",
+      "tagline": "WordPress Block Bindings, declared in code.",
+      "command": "composer require pollora/block-bindings"
+    },
+    {
       "repo": "hook",
       "family": "package",
       "name": "Hook",
