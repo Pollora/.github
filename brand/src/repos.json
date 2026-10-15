@@ -140,6 +140,20 @@
       "command": "composer require pollora/assets"
     },
     {
+      "repo": "meta",
+      "family": "package",
+      "name": "Meta",
+      "tagline": "Typed WordPress meta, declared in code.",
+      "command": "composer require pollora/meta"
+    },
+    {
+      "repo": "roles",
+      "family": "package",
+      "name": "Roles",
+      "tagline": "WordPress roles and capabilities, in code.",
+      "command": "composer require pollora/roles"
+    },
+    {
       "repo": "hook",
       "family": "package",
       "name": "Hook",
