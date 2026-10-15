@@ -133,6 +133,13 @@
       "command": "composer require pollora/schedule"
     },
     {
+      "repo": "assets",
+      "family": "package",
+      "name": "Assets",
+      "tagline": "Scripts, styles and Vite builds for WordPress, hot reload included.",
+      "command": "composer require pollora/assets"
+    },
+    {
       "repo": "hook",
       "family": "package",
       "name": "Hook",
