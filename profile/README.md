@@ -62,6 +62,7 @@ The framework is built from these, and each one works on its own.
 | [schedule](https://github.com/Pollora/schedule) | Scheduled tasks for WordPress, as `#[Schedule]` attributes or a fluent API, with WP-Cron as the default driver, with or without Laravel |
 | [assets](https://github.com/Pollora/assets) | Scripts, styles and Vite builds for WordPress: enqueue with a fluent API, resolve the hashed build or the dev server, with or without Laravel |
 | [meta](https://github.com/Pollora/meta) · [roles](https://github.com/Pollora/roles) · [block-bindings](https://github.com/Pollora/block-bindings) | Typed post, term, user and comment meta, roles and capabilities, and Block Bindings sources, declared as classes with attributes and compiled for WordPress, with or without Laravel |
+| [media](https://github.com/Pollora/media) | WordPress media on any Flysystem disk (local, S3, R2, Scaleway…) behind two settings, the disk and the public URL, with or without Laravel |
 | [Helper-Overrider](https://github.com/Pollora/Helper-Overrider) | One `__()` for Laravel and WordPress translations |
 
 ### AI
