@@ -161,6 +161,13 @@
       "command": "composer require pollora/block-bindings"
     },
     {
+      "repo": "media",
+      "family": "package",
+      "name": "Media",
+      "tagline": "WordPress media on any disk, behind two settings.",
+      "command": "composer require pollora/media"
+    },
+    {
       "repo": "hook",
       "family": "package",
       "name": "Hook",
