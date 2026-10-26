@@ -211,6 +211,13 @@
       "command": "composer require pollora/abilities"
     },
     {
+      "repo": "harness",
+      "family": "package",
+      "name": "Harness",
+      "tagline": "One set of quality gates for every Pollora repository.",
+      "command": "composer require pollora/harness --dev"
+    },
+    {
       "repo": "McpConnector",
       "family": "ai",
       "name": "MCP",
