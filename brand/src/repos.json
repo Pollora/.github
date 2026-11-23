@@ -218,6 +218,13 @@
       "command": "composer require pollora/harness --dev"
     },
     {
+      "repo": "object-cache",
+      "family": "package",
+      "name": "Object Cache",
+      "tagline": "A persistent Redis object cache for WordPress.",
+      "command": "composer require pollora/object-cache"
+    },
+    {
       "repo": "McpConnector",
       "family": "ai",
       "name": "MCP",
