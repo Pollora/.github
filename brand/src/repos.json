@@ -239,6 +239,34 @@
       "command": "composer require pollora/hornet"
     },
     {
+      "repo": "debugbar",
+      "family": "package",
+      "name": "Debugbar",
+      "tagline": "Queries, hooks and templates in the debug bar.",
+      "command": "composer require pollora/debugbar --dev"
+    },
+    {
+      "repo": "i18n",
+      "family": "package",
+      "name": "i18n",
+      "tagline": "Translatable labels for constants and attributes.",
+      "command": "composer require pollora/i18n"
+    },
+    {
+      "repo": "woocommerce",
+      "family": "package",
+      "name": "WooCommerce",
+      "tagline": "Blade templates, routes and events for your shop.",
+      "command": "composer require pollora/woocommerce"
+    },
+    {
+      "repo": "wp-rocket",
+      "family": "package",
+      "name": "WP Rocket",
+      "tagline": "WP Rocket that leaves your project files alone.",
+      "command": "composer require pollora/wp-rocket"
+    },
+    {
       "repo": "McpConnector",
       "family": "ai",
       "name": "MCP",
