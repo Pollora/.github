@@ -225,6 +225,20 @@
       "command": "composer require pollora/object-cache"
     },
     {
+      "repo": "headless",
+      "family": "package",
+      "name": "Headless",
+      "tagline": "WordPress as the back end of any front end.",
+      "command": "composer require pollora/headless"
+    },
+    {
+      "repo": "hornet",
+      "family": "package",
+      "name": "Hornet",
+      "tagline": "Security audit and hardening for WordPress.",
+      "command": "composer require pollora/hornet"
+    },
+    {
       "repo": "McpConnector",
       "family": "ai",
       "name": "MCP",
